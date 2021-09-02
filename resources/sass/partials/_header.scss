@@ -13,11 +13,7 @@ $header-text: #1C1C1C;
             text-transform: uppercase;
             text-align: center;
             display:inline-block;
-
-            &:hover{
-                color: $header-blue;
-                border-bottom: 3px solid $header-blue;
-            }
+            
         };
     }
 };
@@ -28,6 +24,23 @@ $header-text: #1C1C1C;
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
+    ul{
+        list-style-type: none;
+        li{
+            font-size: 20px;
+            padding: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            color: $header-text;
+            font-weight: bold;
+            display:inline-block;
+
+            &:hover{
+                color: $header-blue;
+                border-bottom: 3px solid $header-blue;
+            }
+        };
+    }
 }
 .logo-container{
     width: 60px;
