@@ -1,0 +1,38 @@
+.footer{
+    // background-image:url("public/images/footer-bg.jpg");
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+
+.logo-bg{
+    // background-image: url("public/images/dc-logo-bg.png");
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+}
+
+.lists{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    ul{
+        list-style-type: none;
+        padding: 10px;
+        li{
+            color: gray;
+            &:first-child{
+                font-size: 18px;
+                padding: 10px 0;
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
