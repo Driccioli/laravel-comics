@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="{{mix('/css/app.css')}}">
 </head>
 <body>
-    <header>
-        @include('layouts.header')
-    </header>
-
-    <div class="container">
-        @yield('content')
+    <div class="container-fluid">
+        <header>
+            @include('layouts.header')
+        </header>
+    
+        <div class="container content">
+            @yield('content')
+        </div>
+    
+        <footer>
+            @include('layouts.footer')
+        </footer>
     </div>
-
-    <footer>
-        @include('layouts.footer')
-    </footer>
+    
 </body>
 </html>
