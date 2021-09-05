@@ -1,8 +1,48 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Partials
 @import "./partials/_header.scss";
 @import "./partials/_footer.scss";
 
+
+//Global CSS
 .content{
     text-align:center;
+}
+
+//Homepage CSS (to move to dedicated partial)
+.current-series{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    background-color: $header-blue;
+    text-align: left;
+    font-size: 30px;
+}
+
+.homepage{
+    background-color: black; //Temporary: to replace with actual background color which is slightly lighter
+}
+.comic-series{
+    position: relative;
+}
+.comic-series-content{
+    .comic-thumbnail{
+        width: 150px;
+        height: 150px;
+        background-position: top;
+        background-image: url("{{$comic['thumb']}}");
+    }
+    span{
+        font-size: 14px;
+    }
+    text-transform: uppercase;
+    color: darkgray;
 }

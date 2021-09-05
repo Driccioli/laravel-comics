@@ -14,12 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    $comics = config('comics');
+    return view('homepage', [
+        'comics' => $comics
+    ]);
 }) ->name('home');
 
-Route::get('/product', function () {
-    return view('product');
-}) ->name('product');
+Route::get('/comics/{id}', function ($id) {
+
+    // aggiorno l'id con un valore posizionale
+    $arrayIndex = $id - 1;
+
+    $comics = config('comics');
+
+    return view('comic', [
+        "arrayIndex" => $arrayIndex,
+        'comics' => $comics
+    ]);
+})->name('comic');
 
 Route::get('/about-us', function () {
     return view('about-us');
@@ -28,3 +40,4 @@ Route::get('/about-us', function () {
 Route::get('/contact-us', function () {
     return view('contact-us');
 }) ->name('contact-us');
+
