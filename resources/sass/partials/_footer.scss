@@ -1,3 +1,6 @@
+$dark-mode: #1C1C1C;
+$shop: #0282F9;
+
 .footer{
     background-image: url("/images/footer-bg.jpg");
     padding: 10px 0;
@@ -35,4 +38,43 @@
             }
         }
     }
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    
+
+    background: $dark-mode;
+    color: white;
+
+    button{
+        border: 2px solid $shop;
+        background: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    
+}
+
+.social-links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        color: $shop;
+        font-size: 20px;
+        text-transform: uppercase;
+        .social-logo{
+            padding-left:10px;
+            &:first-child{
+                padding-left: 30px;
+            }
+        }
 }

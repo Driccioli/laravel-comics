@@ -10,39 +10,81 @@
 //Partials
 @import "./partials/_header.scss";
 @import "./partials/_footer.scss";
+@import "./partials/_homepage.scss";
 
-
-//Global CSS
 .content{
-    text-align:center;
-}
-
-//Homepage CSS (to move to dedicated partial)
-.current-series{
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    background-color: $header-blue;
-    text-align: left;
-    font-size: 30px;
-}
-
-.homepage{
-    background-color: black; //Temporary: to replace with actual background color which is slightly lighter
-}
-.comic-series{
+    width: 100%;
     position: relative;
 }
-.comic-series-content{
-    .comic-thumbnail{
-        width: 150px;
-        height: 150px;
-        background-position: top;
-        background-image: url("{{$comic['thumb']}}");
+
+//Comic CSS 
+
+.thumb-container{
+    background-color: $header-blue;
+    width: 100%;
+    height:10vh;
+    position: relative;
+
+    img{
+        position: absolute;
+        top: -230px;
+        left: 270px;
     }
-    span{
-        font-size: 14px;
-    }
+}
+
+.comic-title{
     text-transform: uppercase;
-    color: darkgray;
+    font-size:24px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.on-sale{
+    background-color: rgb(92, 199, 92);
+    color: white;
+    font-weight: bold;
+}
+
+.info{
+    background-color: lightgray;
+    border-top: 2px solid gray;
+    h3{
+        color: darkblue;
+    }
+
+}
+
+.talent,.specs{
+    div{
+        border-bottom: 1px solid gray;
+    }
+}
+
+.series{
+    p{
+        text-transform: uppercase;
+    }
+}
+
+.link{
+    color:rgb(0, 110, 255);
+}
+.buy-comics{
+    background-color: lightgray;
+    border-top: 1px solid gray;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    div{
+        border-left: 1px solid gray;
+        &:last-child{
+            border-right: 1px solid gray;
+        }
+        img{
+            width:40px;
+            filter:brightness(0.5);
+        }
+    }
+    
 }

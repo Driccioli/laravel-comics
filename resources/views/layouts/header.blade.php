@@ -6,9 +6,11 @@
 </div>
 
 <div class="header-2">
+    <a href="{{route('home')}}">
     <div class="logo-container">
         <img src="/images/dc-logo.png" alt="DC Logo">
     </div>
+    </a>
     <nav>
             <ul>
                 <li>Characters</li>
@@ -25,6 +27,6 @@
     </nav>
 </div>
 
-<div class="jumbotron">
+<div class="dc-jumbotron">
     
 </div>

@@ -45,3 +45,26 @@
     <div class="logo-bg">
     </div>
 </div>
+<div class="social">
+        <div class="social-media">
+            <button>Sign-up Now!</button>
+            <div class="social-links">
+                Follow Us
+                <div class="social-logo">
+                    <img src="/images/footer-facebook.png" alt="Facebook">
+                </div>
+                <div class="social-logo">
+                    <img src="/images/footer-twitter.png" alt="Twitter">
+                </div>
+                <div class="social-logo">
+                    <img src="/images/footer-youtube.png" alt="Youtube">
+                </div>
+                <div class="social-logo">
+                    <img src="/images/footer-pinterest.png" alt="Pinterest">
+                </div>
+                <div class="social-logo">
+                    <img src="/images/footer-periscope.png" alt="Periscope">
+                </div>
+            </div>
+        </div>
+</div>
